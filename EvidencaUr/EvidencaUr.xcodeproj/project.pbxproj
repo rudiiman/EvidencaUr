@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B53E27312DF77B0D00DAE5B3 /* EvidencaUrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E27302DF77B0400DAE5B3 /* EvidencaUrApp.swift */; };
-		B59CCC132DF78F3A00CC7A55 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59CCC122DF78F3900CC7A55 /* SwiftUI.framework */; };
+                B53E27312DF77B0D00DAE5B3 /* EvidencaUrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E27302DF77B0400DAE5B3 /* EvidencaUrApp.swift */; };
+                7DC1984270224F109B0DA9E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2328759470F94869BE4D342D /* ContentView.swift */; };
+                6FA9021064BA4C2E8590DF10 /* AddWorkRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDE8768CE348C8A0AB203D /* AddWorkRecordView.swift */; };
+                3873D35D9BCE49F6948F6D76 /* WorkRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B31E612EDA49F9BB4D273D /* WorkRecordView.swift */; };
+                EBD5B077031E4E5BA8DCC281 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9107715A9FC8437499667A03 /* StatisticsView.swift */; };
+                DC6D38352A08417690F7ADF8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A75AB81F4414588315C8F /* Persistence.swift */; };
+                EB31B7AC2F4D4AF0AB5FA3B6 /* WorkRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974C9BE702E540E19EBA74FF /* WorkRecord.swift */; };
+                DA964C472A7C4E48AC0E9103 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB9758636744EDA1BC5461 /* PushNotificationManager.swift */; };
+                747AFE53B438484880F60328 /* Untitled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256DA990948475D9BDAD991 /* Untitled.swift */; };
+                B59CCC132DF78F3A00CC7A55 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59CCC122DF78F3900CC7A55 /* SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +41,15 @@
 		B568F19F2DF763DD00987003 /* EvidencaUr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvidencaUr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B568F1B12DF763E000987003 /* EvidencaUrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvidencaUrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B568F1BB2DF763E000987003 /* EvidencaUrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvidencaUrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B59CCC122DF78F3900CC7A55 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+                B59CCC122DF78F3900CC7A55 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+                2328759470F94869BE4D342D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
+                D8EDE8768CE348C8A0AB203D /* AddWorkRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/AddWorkRecordView.swift; sourceTree = "<group>"; };
+                D2B31E612EDA49F9BB4D273D /* WorkRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/WorkRecordView.swift; sourceTree = "<group>"; };
+                9107715A9FC8437499667A03 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/StatisticsView.swift; sourceTree = "<group>"; };
+                437A75AB81F4414588315C8F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Persistence.swift; sourceTree = "<group>"; };
+                974C9BE702E540E19EBA74FF /* WorkRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/WorkRecord.swift; sourceTree = "<group>"; };
+                FBEB9758636744EDA1BC5461 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications/PushNotificationManager.swift; sourceTree = "<group>"; };
+                E256DA990948475D9BDAD991 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -321,14 +337,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B568F19B2DF763DD00987003 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B53E27312DF77B0D00DAE5B3 /* EvidencaUrApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+                B568F19B2DF763DD00987003 /* Sources */ = {
+                        isa = PBXSourcesBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                                B53E27312DF77B0D00DAE5B3 /* EvidencaUrApp.swift in Sources */,
+                                7DC1984270224F109B0DA9E9 /* ContentView.swift in Sources */,
+                                6FA9021064BA4C2E8590DF10 /* AddWorkRecordView.swift in Sources */,
+                                3873D35D9BCE49F6948F6D76 /* WorkRecordView.swift in Sources */,
+                                EBD5B077031E4E5BA8DCC281 /* StatisticsView.swift in Sources */,
+                                DC6D38352A08417690F7ADF8 /* Persistence.swift in Sources */,
+                                EB31B7AC2F4D4AF0AB5FA3B6 /* WorkRecord.swift in Sources */,
+                                DA964C472A7C4E48AC0E9103 /* PushNotificationManager.swift in Sources */,
+                                747AFE53B438484880F60328 /* Untitled.swift in Sources */,
+                        );
+                        runOnlyForDeploymentPostprocessing = 0;
+                };
 		B568F1AD2DF763E000987003 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
